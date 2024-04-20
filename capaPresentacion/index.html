@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG</title>
+<!-- Pegamos link para poder utilizar la herramienta bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Llamo mi archivo css y js -->
+  <link rel="stylesheet" href="principal.css">
+  <script src="principal.js"></script>
+
+</head>
+
+<body>
+  <!--Creo el encabezado con nombre, una caja de texto y un boton buscar  -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="header-title">World of Games <i class="fas fa-gamepad"></i></h1>
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar juego...">
+            <button type="button" class="btn btn-outline-danger" id="searchButton">Buscar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+          <!--Debajo de la barra creo un borde que va a contener imagenes que vas a estar cambiando-->
+
+  <div class="container">
+    <div class="image-container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+		
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/fondo.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/cod.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/fortnite.jpeg" class="d-block w-100" alt="Slide 3">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/mortal.jpg" class="d-block w-100" alt="Slide 4">
+          </div>
+          <!--Coloco unos botones a los lados de las imagenes para cambiar manualmente la imagen-->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <p>VideoJuegos</p>
+  <!--Hago un container q practicamente ubicara las imagenes dentro de un cuadro pequeño donde estara la imagen con su titulo -->
+  <div class="game-container">
+
+    <div class="game-item" id="1">
+      <img src="./Imagenes/the evil.jpg" alt="Imagen juego 1">
+      <h3>The Evil Within</h3>
+      <div class="game-description">
+        <p class="description-text">nos cuenta la historia de Sebastian Castellanos, un detective que va a vivir su
+          propia pesadilla cuando
+          acude al hospital psiquiátrico Beacon para investigar unos brutales asesinatos que han acabado con todo el
+          personal.</p>
+
+      </div>
+    </div>
+
+    <div class="game-item" id="2">
+      <img src="./Imagenes/The_Evil_Within_2.jpg" alt="Imagen juego 2">
+      <h3>The Evil Within 2</h3>
+      <div class="game-description">
+        <p class="description-text">En su histriónica aventura contra la malvada corporación Mobius –a la Umbrella
+          Corporation aquí– que ha
+          creado un sistema llamado STEM que permite conectar la mente de varias personas en un solo ambiente. </p>
+      </div>
+    </div>
+
+    <div class="game-item" id="3">
+      <img src="./Imagenes/bati.jpg" alt="Imagen juego 3">
+      <h3>Batman</h3>
+      <div class="game-description">
+        <p class="description-text">El juego muestra como, sin la presencia caótica del Joker, los ciudadanos de Gotham
+          nunca se han sentido
+          más seguros, y el crimen en la ciudad ha disminuido dramáticamente. </p>
+      </div>
+    </div>
+
+    <div class="game-item" id="4">
+      <img src="./Imagenes/cod.jpg" alt="Imagen juego 4">
+      <h3>Warzone 2 </h3>
+      <div class="game-description">
+        <p class="description-text">Warzone permite el combate a gran escala en línea entre 150 jugadores, aunque
+          algunos modos de juego por
+          tiempo limitado admitían 200 jugadores.</p>
+      </div>
+    </div>
+
+
+    <div class="game-item" id="5">
+      <img src="./Imagenes/fortnite.jpeg" alt="Imagen juego 5">
+      <h3>Fortnite</h3>
+      <div class="game-description">
+        <p class="description-text">Es un juego de tipo batalla real en el que compiten hasta cien jugadores en
+          solitario, dúos, tríos o
+          escuadrones.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="6">
+      <img src="./Imagenes/mortal.jpg" alt="Imagen juego 6">
+      <h3>Mortal Kombat</h3>
+      <div class="game-description">
+        <p class="description-text">La historia se centra en la travesía de Liu Kang para salvar al mundo del malvado
+          hechicero Shang Tsung,
+          travesía que acaba con su enfrentamiento en el torneo llamado Mortal Kombat.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="7">
+      <img src="./Imagenes/spiderman.jpg" alt="Imagen juego 7">
+      <h3>spiderman</h3>
+      <div class="game-description">
+        <p class="description-text">Spider-Man mientras intenta limpiar su nombre después de haber sido incriminado por
+          un doppelgänger y
+          convertirse en un criminal buscado.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="8">
+      <img src="./Imagenes/val.jpg" alt="Imagen juego 8">
+      <h3>Valorant</h3>
+      <div class="game-description">
+        <p class="description-text">Los jugadores asumen el control de agentes, personajes que provienen de una gran
+          cantidad de países y
+          culturas de todo el mundo.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="9">
+      <img src="./Imagenes/village.jpg" alt="Imagen juego 9">
+      <h3>Village</h3>
+      <div class="game-description">
+        <p class="description-text">Ethan llega a una aldea cercana que está siendo atacada por criaturas mutantes
+          parecidas a hombres lobo,
+          conocidas como licántropos.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="10">
+      <img src="./Imagenes/sifu.jpg" alt="Imagen juego 10">
+      <h3>Sifu</h3>
+      <div class="game-description">
+        <p class="description-text">Sifu cuenta la historia de un joven estudiante de kung-fu con sed de venganza, que
+          busca a los asesinos de
+          su familia.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="11">
+      <img src="./Imagenes/ghos.jpg" alt="Imagen juego 11">
+      <h3>Ghostrunner</h3>
+      <div class="game-description">
+        <p class="description-text">Ghostrunner es un slahser desafiante en primera persona lleno de acción a toda
+          velocidad ambientado en una
+          megaestructura lúgubre cyberpunk.</p>
+      </div>
+    </div>
+
+    <div class="game-item" id="12">
+      <img src="./Imagenes/gta v.jpg" alt="Imagen juego 12">
+      <h3>Gta V</h3>
+      <div class="game-description">
+        <p class="description-text">Un criminal realiza distintas misiones a cambio de dinero. Sus encargos suelen ser
+          asesinar personas,
+          secuestrar hombres adinerados, robar coches, asaltar bancos, etc.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--Coloco este link que es de bootstrap para hacer uso de js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="principal.js"></script>s
+</body>
+
+</html>
